@@ -1,0 +1,32 @@
+// c++_homework_week2.cpp : Defines the entry point for the console application.
+//
+#include "stdafx.h"
+#include<iostream>
+
+using namespace std;
+
+
+int main()
+{
+	int item_price1 = 0, item_price2 = 0, item_price3 = 0, sum = 0, percent_off = 0;
+
+	cout << "please enter the price of your first item ";
+	cin >> item_price1;
+
+	cout << "please enter the price of your second item ";
+	cin >> item_price2;
+
+	cout << "please enter the price of your third item ";
+	cin >> item_price3;
+	
+	sum = item_price1 + item_price2 + item_price3;
+
+	cout << "your total amount is " << sum;
+
+	int percent_off1 = 0, percent_off2 = 0, percent_off3 = 0;
+
+	int newtotal = sum/2;
+	
+	cout << "\nCongratulations you have recieved 50% off your total sum, \n Your new total is " << newtotal;
+
+	return 0;
