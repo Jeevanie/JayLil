@@ -1,0 +1,30 @@
+// switch_exercise.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	char choice;
+
+	cout << "There are four types of animals in our pet store \n";
+	cout << "A)dog, B)cat, c)bird and D)lizard. Enter A, B, C, or D. \n";
+	cin >> choice;
+
+	cout << "each animal comes with the following free gift: \n";
+	switch (choice)
+	{
+		case 'A': cout << "\tCollar with retractable leash.\n";
+			break;
+		case 'B': cout << "\tBox of Heavy Duty Litter. \n";
+			break;
+		case 'C': cout << "\tBird Cage. \n";
+			break;
+		case 'D': cout << "\tHeating Lamp. \n";
+			break;
+		default: cout << "you can only choose the following A, B, C or D.";
+	}
+    return 0;
+}
